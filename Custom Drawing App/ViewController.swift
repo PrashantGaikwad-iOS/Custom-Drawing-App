@@ -10,9 +10,14 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    let canvas = Canvas()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        view.addSubview(canvas)
+        canvas.backgroundColor = .white
+        canvas.frame = view.frame
     }
 
 
